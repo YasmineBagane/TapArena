@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="Hub.uss" />
+    <ui:VisualElement name="hub-root" class="hub-root">
+        <ui:Label text="TapArena" class="hub-title" />
+        <ui:VisualElement name="tile-root" class="hub-tile-grid" />
+    </ui:VisualElement>
+</ui:UXML>

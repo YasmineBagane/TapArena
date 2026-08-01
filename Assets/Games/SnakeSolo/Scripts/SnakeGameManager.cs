@@ -43,17 +43,17 @@ public sealed class SnakeGameManager : MonoBehaviour
     public Color SnakeHeadColor => snakeHeadColor;
     public Color SnakeBodyColor => snakeBodyColor;
 
-    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
-    private static void Bootstrap()
-    {
-        if (FindFirstObjectByType<SnakeGameManager>() != null)
-        {
-            return;
-        }
+    // [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
+    // private static void Bootstrap()
+    // {
+    //     if (FindFirstObjectByType<SnakeGameManager>() != null)
+    //     {
+    //         return;
+    //     }
 
-        GameObject gameObject = new GameObject("Snake Game Manager");
-        gameObject.AddComponent<SnakeGameManager>();
-    }
+    //     GameObject gameObject = new GameObject("Snake Game Manager");
+    //     gameObject.AddComponent<SnakeGameManager>();
+    // }
 
     private void Awake()
     {

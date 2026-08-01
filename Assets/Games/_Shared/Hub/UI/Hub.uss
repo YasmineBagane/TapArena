@@ -1,0 +1,51 @@
+.hub-root {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+}
+
+.hub-title {
+    font-size: 36px;
+    -unity-font-style: bold;
+    color: rgb(240, 240, 240);
+    margin-bottom: 24px;
+}
+
+.hub-tile-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 600px;
+}
+
+.hub-tile {
+    width: 160px;
+    height: 160px;
+    margin: 12px;
+    background-color: rgb(45, 50, 65);
+    border-radius: 14px;
+    border-width: 2px;
+    border-color: rgb(70, 75, 95);
+    align-items: center;
+    justify-content: center;
+    -unity-text-align: middle-center;
+    white-space: normal;
+    font-size: 18px;
+    -unity-font-style: bold;
+    color: rgb(240, 240, 240);
+}
+
+.hub-tile:hover {
+    background-color: rgb(60, 66, 85);
+}
+
+.hub-tile--locked {
+    opacity: 0.5;
+}
+
+.hub-tile__sublabel {
+    font-size: 12px;
+    color: rgb(180, 180, 180);
+    margin-top: 4px;
+}

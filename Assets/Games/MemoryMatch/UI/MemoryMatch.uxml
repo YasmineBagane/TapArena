@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="MemoryMatch.uss" />
+    <ui:VisualElement name="memory-match-root" class="match-root">
+        <ui:VisualElement name="hud-bar" class="match-hud">
+            <ui:Label name="round-label" text="Round 1" class="match-hud__round" />
+            <ui:Label name="timer-label" text="45.0" class="match-hud__timer" />
+        </ui:VisualElement>
+        <ui:VisualElement name="grid-root" class="match-grid" />
+    </ui:VisualElement>
+</ui:UXML>

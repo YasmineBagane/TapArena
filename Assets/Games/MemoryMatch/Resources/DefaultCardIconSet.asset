@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3ce0f7693515a48ab31183f9d18103, type: 3}
+  m_Name: DefaultCardIconSet
+  m_EditorClassIdentifier: Assembly-CSharp::TapArena.MemoryMatch.CardIconSetSO
+  faces:
+  - faceId: orange
+    icon: {fileID: 0}
+    placeholderColor: {r: 0.902, g: 0.624, b: 0, a: 1}
+  - faceId: sky-blue
+    icon: {fileID: 0}
+    placeholderColor: {r: 0.337, g: 0.706, b: 0.914, a: 1}
+  - faceId: bluish-green
+    icon: {fileID: 0}
+    placeholderColor: {r: 0, g: 0.62, b: 0.451, a: 1}
+  - faceId: yellow
+    icon: {fileID: 0}
+    placeholderColor: {r: 0.941, g: 0.894, b: 0.259, a: 1}
+  - faceId: blue
+    icon: {fileID: 0}
+    placeholderColor: {r: 0, g: 0.447, b: 0.698, a: 1}
+  - faceId: vermillion
+    icon: {fileID: 0}
+    placeholderColor: {r: 0.835, g: 0.369, b: 0, a: 1}
