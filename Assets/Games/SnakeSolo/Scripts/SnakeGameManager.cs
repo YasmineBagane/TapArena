@@ -90,7 +90,8 @@ public sealed class SnakeGameManager : MonoBehaviour
         if (TimeRemaining <= 0f)
         {
             TimeRemaining = 0f;
-            EndGame("Time Up");
+            // EndGame("Time Up");
+            EndGame();
             return;
         }
 
@@ -141,7 +142,8 @@ public sealed class SnakeGameManager : MonoBehaviour
         ui.UpdateHud(Score, TimeRemaining);
     }
 
-    public void EndGame(string reason)
+    // public void EndGame(string reason)
+    public void EndGame()
     {
         if (IsGameOver)
         {
@@ -149,7 +151,8 @@ public sealed class SnakeGameManager : MonoBehaviour
         }
 
         IsGameOver = true;
-        ui.ShowGameOver(Score, reason);
+        // ui.ShowGameOver(Score, reason);
+        ui.ShowGameOver(Score);
     }
 
     public void ResetGame()
@@ -181,7 +184,8 @@ public sealed class SnakeGameManager : MonoBehaviour
 
         if (emptyCells.Count == 0)
         {
-            EndGame("Board Filled");
+            // EndGame("Board Filled");
+            EndGame();
             return;
         }
 

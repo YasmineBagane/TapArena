@@ -31,7 +31,8 @@ public sealed class SnakeUIController : MonoBehaviour
         }
     }
 
-    public void ShowGameOver(int score, string reason)
+    // public void ShowGameOver(int score, string reason)
+    public void ShowGameOver(int score)
     {
         if (gameOverPanel == null)
         {
@@ -40,8 +41,7 @@ public sealed class SnakeUIController : MonoBehaviour
 
         gameOverPanel.style.display = DisplayStyle.Flex;
         finalScoreLabel.text = $"Score is {score}";
-        reasonLabel.text = reason;
-        restartButton.Focus();
+        // restartButton.Focus();
     }
 
     public void HideGameOver()
@@ -160,23 +160,23 @@ public sealed class SnakeUIController : MonoBehaviour
         finalScoreLabel.style.color = Color.white;
         card.Add(finalScoreLabel);
 
-        reasonLabel = new Label("Reason");
-        reasonLabel.name = "GameOverReasonLabel";
-        reasonLabel.style.unityTextAlign = TextAnchor.MiddleCenter;
-        reasonLabel.style.fontSize = 18;
-        reasonLabel.style.marginTop = 8;
-        reasonLabel.style.color = new Color(0.65f, 0.9f, 1f, 1f);
-        card.Add(reasonLabel);
+        // reasonLabel = new Label("Reason");
+        // reasonLabel.name = "GameOverReasonLabel";
+        // reasonLabel.style.unityTextAlign = TextAnchor.MiddleCenter;
+        // reasonLabel.style.fontSize = 18;
+        // reasonLabel.style.marginTop = 8;
+        // reasonLabel.style.color = new Color(0.65f, 0.9f, 1f, 1f);
+        // card.Add(reasonLabel);
 
-        restartButton = new Button(() => SnakeGameManager.Instance.ResetGame());
-        restartButton.name = "RestartButton";
-        restartButton.text = "Restart (R)";
-        restartButton.style.marginTop = 24;
-        restartButton.style.width = 180;
-        restartButton.style.height = 46;
-        restartButton.style.fontSize = 19;
-        restartButton.style.unityFontStyleAndWeight = FontStyle.Bold;
-        card.Add(restartButton);
+        // restartButton = new Button(() => SnakeGameManager.Instance.ResetGame());
+        // restartButton.name = "RestartButton";
+        // restartButton.text = "Restart (R)";
+        // restartButton.style.marginTop = 24;
+        // restartButton.style.width = 180;
+        // restartButton.style.height = 46;
+        // restartButton.style.fontSize = 19;
+        // restartButton.style.unityFontStyleAndWeight = FontStyle.Bold;
+        // card.Add(restartButton);
 
         HideGameOver();
     }

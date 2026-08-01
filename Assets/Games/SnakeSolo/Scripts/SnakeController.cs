@@ -56,7 +56,8 @@ public sealed class SnakeController : MonoBehaviour
 
         if (manager.IsOutsideBoard(nextHead))
         {
-            manager.EndGame("Hit Border");
+            // manager.EndGame("Hit Border");
+            manager.EndGame();
             return;
         }
 
@@ -66,7 +67,8 @@ public sealed class SnakeController : MonoBehaviour
         {
             if (cells[i] == nextHead && (willGrow || i != tailIndex))
             {
-                manager.EndGame("Snake Ate Itself");
+                // manager.EndGame("Snake Ate Itself");
+                manager.EndGame();
                 return;
             }
         }
