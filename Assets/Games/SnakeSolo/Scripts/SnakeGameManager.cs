@@ -46,7 +46,7 @@ public sealed class SnakeGameManager : MonoBehaviour
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
     private static void Bootstrap()
     {
-        if (FindObjectOfType<SnakeGameManager>() != null)
+        if (FindFirstObjectByType<SnakeGameManager>() != null)
         {
             return;
         }
