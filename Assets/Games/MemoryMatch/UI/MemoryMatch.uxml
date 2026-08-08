@@ -6,5 +6,13 @@
             <ui:Label name="timer-label" text="45.0" class="match-hud__timer" />
         </ui:VisualElement>
         <ui:VisualElement name="grid-root" class="match-grid" />
+
+        <ui:VisualElement name="end-screen" class="end-screen">
+            <ui:Label name="end-title" text="Cleared!" class="end-title" />
+            <ui:Label name="end-score" text="Score: 0" class="end-stat" />
+            <ui:Label name="end-time" text="Time: 0.0s" class="end-stat" />
+            <ui:Label name="end-pb" text="New Personal Best!" class="end-pb" />
+            <ui:Button name="retry-button" text="Play Again" class="end-retry-button" />
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
