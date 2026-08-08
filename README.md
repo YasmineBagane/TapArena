@@ -43,6 +43,10 @@ Assets/
       Hub/        # Central menu — one scene per game, tap a tile to load it
     SnakeSolo/
     MemoryMatch/
+    Perfect Stop/         [planned]
+    Precision Slingshot/  [planned]
+    Stack It/             [planned]
+    Rhythm Runner/        [planned]
 ```
 
 Each game lives in its own scene and only loads when selected from the Hub,
